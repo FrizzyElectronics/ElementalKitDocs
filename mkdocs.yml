@@ -5,7 +5,13 @@ pages:
   - Plataforma: 
     - Arduino: arduino.md
     - Raspberry Pi: raspberry.md
-  - Frizzy Elemental Kit: elemental.md
+  - Frizzy Elemental Kit: 
+    - Introducción :  intro.md
+    - Sensores: sensor.md
+    - Actuadores: actuador.md
+    - Display: display.md
+    - Communicacion: comm.md
+    - Otros: otros.md 
 theme:
   name: 'material'
   logo: 'images/logolight.png'
