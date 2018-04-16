@@ -7,7 +7,8 @@ pages:
     - Raspberry Pi: raspberry.md
   - Frizzy Elemental Kit: 
     - Introducción :  intro.md
-    - Sensores: sensor.md
+    - Sensores:
+      - Boton: boton.md
     - Actuadores: actuador.md
     - Display: display.md
     - Communicacion: comm.md
