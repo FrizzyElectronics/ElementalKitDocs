@@ -1,7 +1,11 @@
 
 site_name: Frizzy's Wiki
 pages:
-  - Home: index.md
+  - Frizzy's Wiki: index.md
+  - Plataforma: 
+    - Arduino: arduino.md
+    - Raspberry Pi: raspberry.md
+  - Frizzy Elemental Kit: elemental.md
 theme:
   name: 'material'
   logo: 'images/logolight.png'

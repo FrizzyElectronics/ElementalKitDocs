@@ -1,12 +1,14 @@
-# Wiki Oficial de Frizzy Electronics
+# Frizzy Electronics Wiki
 
 ## Frizzy Elemental Kit
 
-<p><a href="https://www.frizzy.es/grape.html" onclick="javascript:pageTracker._trackPageview('/goal/grove.html');"><img alt="" src="https://github.com/FrizzyElectronics/ElementalKitDocs/docs/images/kit1.jpg" /></a></p>
 
+[![Texto alternativo](images/kit1.JPG "descripcion")](www.frizzy.es/grape)
 ## Plataformas
 
-
+| **Arduino**  |    **Raspberry**  |    **Beaglebone**   | 
+|:---:|:---:|:---:|
+|[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/arduino.png)](/Arduino)   |  [![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Respberry%20Pi.png)](/Raspberry_Pi) |[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Beaglebone.png)](/BeagleBone)  |
 
 ## Licencia
 -------
