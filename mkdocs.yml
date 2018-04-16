@@ -40,4 +40,4 @@ markdown_extensions:
   - pymdownx.tilde
 
 repo_name: FrizzyElectronics
-repo_url: https://github.com/FrizzyElectronics
+repo_url: https://github.com/FrizzyElectronics/ElementalKitDocs
