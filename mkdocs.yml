@@ -9,9 +9,21 @@ pages:
     - Introducción :  intro.md
     - Sensores:
       - Boton: boton.md
-    - Actuadores: actuador.md
-    - Display: display.md
-    - Communicacion: comm.md
+      - Sensor de luz: ldr.md
+      - Potenciometro: pot.md
+      - Sensor de distancia: sharp.md
+      - Sensor siguelineas: linefollower.md
+      - Keypad: keypad.md
+    - Actuadores:
+      - Controlador de motores: motor.md
+      - Led RGB: rgb.md
+      - Buzzer: buzzer.md
+      - Led: led.md
+      - Servo: servo.md
+    - Display:
+      - Pantalla Oled: oled.md
+    - Communicacion:
+      - Módulo bluetooth: bluetooth.md
     - Otros: otros.md 
 theme:
   name: 'material'
