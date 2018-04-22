@@ -22,9 +22,15 @@ El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propi
 | 5V    | Rojo              |
 | D2    | Amarillo          |
 
+<<<<<<< Updated upstream
 ```c++
 const int pinBoton = 2;     // El numero del boton del pin
 const int ledPin =  13;      // the number of the LED pin
+=======
+```c
+const int pinBoton = 2;     // Pin del botón
+const int ledPin =  13;      // Pin del Led, 
+>>>>>>> Stashed changes
 
 // variables will change:
 int buttonState = 0;         // variable for reading the pushbutton status
