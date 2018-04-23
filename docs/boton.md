@@ -14,7 +14,8 @@ El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propi
 
 ###Grape
 
-[![Texto alternativo](images/montaje_boton.png "Modulo de boton básico")](www.frizzy.es/grape)
+
+<img src="../images/montaje_boton.png" alt="Drawing" style="width: 400px;"/>
 
 | Grape | Elemental - Boton |
 | ----- | ----------------- |
@@ -28,32 +29,38 @@ const int pinBoton = 2;     // El numero del boton del pin
 const int ledPin =  13;      // the number of the LED pin
 
 const int pinBoton = 2;     // Pin del botón
-const int ledPin =  13;      // Pin del Led, 
+const int ledPin =  13;      // Pin del Led
 
-
-// variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+int estadoBoton = 0;         // variable para leer el estado del botón
 
 void setup() {
-    // initialize the LED pin as an output:
+    // inicializamos el led como salida
     pinMode(ledPin, OUTPUT);
-    // initialize the pushbutton pin as an input:
-    pinMode(buttonPin, INPUT);
+    // inicializamos el boton como entrada
+    pinMode(pinBoton, INPUT);
 }
 
 void loop(){
-    // read the state of the pushbutton value:
-    buttonState = digitalRead(buttonPin);
+    // leemos el estado del boton y lo almacenamos en nuestra variable
+    estadoBoton = digitalRead(pinBoton);
 
-    // check if the pushbutton is pressed.
-    // if it is, the buttonState is HIGH:
-    if (buttonState == HIGH) {
-        // turn LED on:
+    // comprueba si se ha pulsado el boton
+    // si se ha pulsado el estado es LOW
+    if (estadoBoton == LOW) {
+        // encendemos el led
         digitalWrite(ledPin, HIGH);
     }
     else {
-        // turn LED off:
+        //apagamos el led
         digitalWrite(ledPin, LOW);
     }
 }
 ```
+
+
+Resources
+---------
+
+-   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
+-   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
+
