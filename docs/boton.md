@@ -11,6 +11,7 @@ El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propi
 * Incluye la resistencia pull-up
 
 ##Primeros pasos
+--------
 
 ###Grape
 
@@ -58,9 +59,18 @@ void loop(){
 ```
 
 
-Resources
----------
+##Recursos
+-------
 
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Button.fzpz "File:BasicModule-II.pdf")
+
+## Licencia
+-------
+Copyright (c) 2018-2017 Frizzy Electronics. (https://www.frizzy.es). Todo el texto y las fotografías bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> </a>
+
+## Soporte Técnico
+-------
+Por favor, comunicanos cualquier incidencia para poder mejorar juntos. Escribenos a [info@frizzy.es](info@frizzy.es). 
 
