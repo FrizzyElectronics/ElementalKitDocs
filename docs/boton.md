@@ -25,14 +25,11 @@ El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propi
 | D2    | Amarillo          |
 
 
-```c++
-const int pinBoton = 2;     // El numero del boton del pin
-const int ledPin =  13;      // the number of the LED pin
-
+```arduino
 const int pinBoton = 2;     // Pin del botón
-const int ledPin =  13;      // Pin del Led
+const int ledPin =  13;     // Pin del Led
 
-int estadoBoton = 0;         // variable para leer el estado del botón
+int estadoBoton = 0;        // variable para leer el estado del botón
 
 void setup() {
     // inicializamos el led como salida

@@ -18,43 +18,26 @@ El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar
 
 <img src="../images/montaje_ldr.png" alt="Drawing" style="width: 400px;"/>
 
-| Grape | Elemental - Boton |
+| Grape | Elemental - LDR |
 | ----- | ----------------- |
 | GND   | Negro             |
 | 5V    | Rojo              |
 | A2    | Amarillo          |
 
 
-```c++
-const int pinBoton = 2;     // El numero del boton del pin
-const int ledPin =  13;      // the number of the LED pin
-
-const int pinBoton = 2;     // Pin del botón
-const int ledPin =  13;      // Pin del Led
-
-int estadoBoton = 0;         // variable para leer el estado del botón
+```arduino
 
 void setup() {
-    // inicializamos el led como salida
-    pinMode(ledPin, OUTPUT);
-    // inicializamos el boton como entrada
-    pinMode(pinBoton, INPUT);
+    //Inicializamos el puerto serie 9600 baudios
+    Serial.begin(9600);
 }
 
 void loop(){
-    // leemos el estado del boton y lo almacenamos en nuestra variable
-    estadoBoton = digitalRead(pinBoton);
+    // Leemos el sensor y lo asignamos a la variable luz
+    luz = analogRead(A2);
+    Serial.print("El nivel de luz es de:");
+    Serial.println(luz);
 
-    // comprueba si se ha pulsado el boton
-    // si se ha pulsado el estado es LOW
-    if (estadoBoton == LOW) {
-        // encendemos el led
-        digitalWrite(ledPin, HIGH);
-    }
-    else {
-        //apagamos el led
-        digitalWrite(ledPin, LOW);
-    }
 }
 ```
 
@@ -64,7 +47,7 @@ void loop(){
 
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Button.fzpz "File:BasicModule-II.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_LDR.fzpz "File:BasicModule-II.pdf")
 
 ## Licencia
 -------
