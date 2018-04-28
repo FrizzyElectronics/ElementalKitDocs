@@ -10,7 +10,7 @@ pages:
     - Sensores:
       - Boton: boton.md
       - Sensor de luz: ldr.md
-      - Potenciometro: pot.md
+      - Potenciómetro: pot.md
       - Sensor de distancia: sharp.md
       - Sensor siguelineas: linefollower.md
       - Keypad: keypad.md
