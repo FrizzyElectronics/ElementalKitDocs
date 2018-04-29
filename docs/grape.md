@@ -28,9 +28,9 @@ El GP2Y0A21YK0F es un sensor de distancia de tipo infrarrojo. Esta compuesto por
 
 <img src="../images/sharp_funcionamiento.png" alt="Drawing" style="width: 600px;"/>
 
-El sensor devuelve un valor de tensión no lineal representado por esta gráfica, es por ello que tendremos que interpolar. Hemos optado por el uso de una librería que te facilita la tarea, ya que realizar ese cálculo matemático excedería la dificultad que buscamos con el Elemental Kit.
+El sensor devuelve un valor de tensión no lineal representado por esta gráfica, es por ello que tendremos que interpolar. Hemos optado por el uso de una librería que te facilita la tarea, ya que el uso de un código más complejo excedería la dificultad que buscamos con el Elemental Kit.
 
-Si quieres aprender a usar el sensor interpolando y no quieres usar la librería hay multitud de tutoriales como [este](http://www.naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html) en internet. 
+Si quieres aprender a usar el sensor de esta manera y no quieres usar la librería hay multitud de tutoriales como [este](http://www.naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html) en internet. 
 
 La librería que vamos a usar es de [Giuseppe Masino](https://github.com/qub1750ul/Arduino_SharpIR) y la podeis encontrar en el gestor de librerías oficial de Arduino dentro del menú Programa > Incluir Librería > Gestor de librerias bajo el nombre de "SharpIR"
 
