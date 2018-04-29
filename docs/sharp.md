@@ -10,19 +10,31 @@ La conexion de este sensor es bastante sencilla, siemplemente tienes que conecta
 
 ## Características
 
+* Modelo: GP2Y0A21YK0F
 * Tensión de funcionamiento: 4.5V - 5.5V
 * Consumo: 30mA
 * Rango de medición: 10cm - 80cm
 * Tipo de salida: Analógica
 * Tiempo de respuesta: 38 ± 10 ms
 * Medidas: 29.5×13×13.5 mm
-* Peso 3.5g
+* Peso: 3.5g
 
 ##Primeros pasos
 --------
 
 ###Grape
 
+El GP2Y0A21YK0F es un sensor de distancia de tipo infrarrojo. Esta compuesto por un led IR y un dispositivo detector de posición (PSD). El emisor infrarrojo emite un haz de luz pulsante. El haz rebota en el objeto y vuelve para ser captado por el PSD el cual mide la distancia por triangulación.
+
+<img src="../images/sharp_funcionamiento.png" alt="Drawing" style="width: 600px;"/>
+
+El sensor devuelve un valor de tensión no lineal representado por esta gráfica, es por ello que tendremos que interpolar. Hemos optado por el uso de una librería que te facilita la tarea, ya que el uso de un código más complejo excedería la dificultad que buscamos con el Elemental Kit.
+
+Si quieres aprender a usar el sensor de esta manera y no quieres usar la librería hay multitud de tutoriales como [este](http://www.naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html) en internet. 
+
+La librería que vamos a usar es de [Giuseppe Masino](https://github.com/qub1750ul/Arduino_SharpIR) y la podeis encontrar en el gestor de librerías oficial de Arduino dentro del menú Programa > Incluir Librería > Gestor de librerias bajo el nombre de "SharpIR"
+
+###Conexión
 
 <img src="../images/montaje_sharp.png" alt="Drawing" style="width: 600px;"/>
 
@@ -35,17 +47,23 @@ La conexion de este sensor es bastante sencilla, siemplemente tienes que conecta
 
 ```arduino
 
-void setup() {
-    //Inicializamos el puerto serie 9600 baudios
-    Serial.begin(9600);
+#include <SharpIR.h>  //Incluimos la libreria
+
+
+//Creamos una nueva instancia y la llamamos sensor
+SharpIR sensor(GP2Y0A21YK0F, A2);   //Introducimos el pin y el modelo del sensor
+
+
+void setup()
+{
+  Serial.begin(9600);  //Iniciamos el puerto serie a 9600 baudios
 }
 
-void loop(){
-    // Leemos el sensor y lo asignamos a la variable luz
-    luz = analogRead(A2);
-    Serial.print("El nivel de luz es de:");
-    Serial.println(luz);
-
+void loop()
+{
+  int distance = sensor.getDistance(); //Declaramos una variable para almacenar la distancia
+  
+  Serial.println(distance); //Imprimimos la distacia por el puerto serie.
 }
 ```
 
@@ -53,9 +71,8 @@ void loop(){
 ##Recursos
 -------
 
--   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
--   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_LDR.fzpz "File:BasicModule-II.pdf")
+-   [Datasheet](http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0a21yk_e.pdf "File: SharpDatasheet")
+-   [Librería](https://github.com/qub1750ul/Arduino_SharpIR)
 
 ## Licencia
 -------
