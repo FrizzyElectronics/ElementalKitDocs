@@ -1,6 +1,6 @@
 # Elemental Kit - Sensor de distancia infrarrojo
 
-[![Texto alternativo](images/sharp.jpg "Sensor de distancia")](www.frizzy.es/grape)
+![Texto alternativo](images/sharp.jpg "Sensor de distancia")
 
 
 Los sensores de distancia Sharp son una buena opción para muchos proyectos que necesitan mediciones precisas de distancia. De toda la gama de sensores infrarrojos de distanca que Sharp fabrica, hemos optado por usar el GP2Y0A21YK0F debido a su sencillez de uso y a que posee un rango de medición (10-80cm) aplicable en la mayoria de proyectos de robótica amateur. 

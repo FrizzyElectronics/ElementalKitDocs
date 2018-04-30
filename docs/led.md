@@ -1,14 +1,14 @@
 # Elemental Kit - Módulo LED
 
-[![Texto alternativo](images/led.jpg "Modulo de boton básico")](www.frizzy.es/grape)
+![Texto alternativo](images/led.jpg "Modulo de boton básico")
 
-El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propio switch de dos posiciones "on/off" y su correspondiente resistencia pull-up. Cuando el botón es presionado, devuelve LOW y cuando lo sueltas devuelve HIGH. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo contiene un LED de 10mm muy util para tus primeros proyectos de electrónica o como indicador en tus proyectos más avanzados. Hemos añadido un pequeño transistor para reducir el consumo, de esta manera el LED es alimentado directamente por los 5V de alimentación y no por el pin del microcontrolador como en la mayoría de los montajes que puedes encontrar en Internet. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
 
 ## Características
 
-* Botón fácil de usar
+* Led de gran tamaño
 * Utiliza la clásica conexión "GND/VCC/SIG"
-* Incluye la resistencia pull-up
+* Incluye la resistencia limitadora
 
 ##Primeros pasos
 --------
@@ -26,32 +26,20 @@ El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propi
 
 
 ```arduino
-const int pinBoton = 2;     // Pin del botón
-const int ledPin =  13;     // Pin del Led
 
-int estadoBoton = 0;        // variable para leer el estado del botón
+const int ledPin =  2;     // Pin del Led
 
 void setup() {
-    // inicializamos el led como salida
+    // Inicializamos el led como salida
     pinMode(ledPin, OUTPUT);
-    // inicializamos el boton como entrada
-    pinMode(pinBoton, INPUT);
 }
 
 void loop(){
-    // leemos el estado del boton y lo almacenamos en nuestra variable
-    estadoBoton = digitalRead(pinBoton);
 
-    // comprueba si se ha pulsado el boton
-    // si se ha pulsado el estado es LOW
-    if (estadoBoton == LOW) {
-        // encendemos el led
-        digitalWrite(ledPin, HIGH);
-    }
-    else {
-        //apagamos el led
-        digitalWrite(ledPin, LOW);
-    }
+    digitalWrite(ledPin, HIGH); //Encendemos el led
+    delay(1000); //Esperamos 1 segundo
+    digitalWrite(ledPin, LOW);  //Apagamos el led
+    delay(1000); //Esperamos 1 segundo
 }
 ```
 
@@ -59,9 +47,12 @@ void loop(){
 ##Recursos
 -------
 
--   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
--   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Button.fzpz "File:BasicModule-II.pdf")
+-   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule)
+-   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule.pdf "File:BasicModule.pdf")
+-   [Fritzing Rojo](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Red.fzpz "File:Atom_Led_Red.fzpz")
+-   [Fritzing Verde](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Green.fzpz "File:Atom_Led_Green.fzpz")
+-   [Fritzing Azul](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Blue.fzpz "File:Atom_Led_Blue.fzpz")
+-   [Fritzing Amarillo](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Yellow.fzpz "File:Atom_Led_Yellow.fzpz")
 
 ## Licencia
 -------

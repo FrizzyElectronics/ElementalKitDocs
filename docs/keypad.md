@@ -1,6 +1,6 @@
 # Elemental Kit - Módulo Keypad
 
-[![Texto alternativo](images/keypad.jpg "Modulo Keypad")](www.frizzy.es/grape)
+![Texto alternativo](images/keypad.jpg "Modulo Keypad")
 
 El módulo keypad contiene cuatro interruptores de 12mm conectados a cutro resistencias con diferentes valores para que puedas operar los 4 botones ¡con solo un pin analogico de tu placa! El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
 
@@ -23,7 +23,7 @@ El módulo keypad contiene cuatro interruptores de 12mm conectados a cutro resis
 | ----- | ----------------- |
 | GND   | Negro             |
 | 5V    | Rojo              |
-| D2    | Amarillo          |
+| A2    | Amarillo          |
 
 
 ```arduino

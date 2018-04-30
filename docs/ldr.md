@@ -1,6 +1,6 @@
 # Elemental Kit - LDR
 
-[![Texto alternativo](images/ldr.jpg "Modulo de ldr basico")](www.frizzy.es/grape)
+![Texto alternativo](images/ldr.jpg "Modulo de ldr basico")
 
 El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar el nivel de luz ambiente y devolvertelo en funcion de la tensión. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
 
