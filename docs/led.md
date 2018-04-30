@@ -18,7 +18,7 @@ El módulo contiene un LED de 10mm muy util para tus primeros proyectos de elect
 
 <img src="../images/montaje_led.png" alt="Drawing" style="width: 400px;"/>
 
-| Grape | Elemental - Boton |
+| Grape | Elemental - LED |
 | ----- | ----------------- |
 | GND   | Negro             |
 | 5V    | Rojo              |
@@ -48,7 +48,7 @@ void loop(){
 -------
 
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule)
--   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule.pdf "File:BasicModule.pdf")
+-   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule/master/pdf/BasicModule.pdf "File:BasicModule.pdf")
 -   [Fritzing Rojo](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Red.fzpz "File:Atom_Led_Red.fzpz")
 -   [Fritzing Verde](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Green.fzpz "File:Atom_Led_Green.fzpz")
 -   [Fritzing Azul](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Led_Blue.fzpz "File:Atom_Led_Blue.fzpz")

@@ -48,7 +48,7 @@ void loop(){
 
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/KeyPad)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/KeyPad/master/pdf/KeyPad.pdf "File:Kaypad.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Keypad.fzpz "File:KeyPad.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Keypad.fzpz "File:Atom_keypad.fzpz")
 
 ## Licencia
 -------
