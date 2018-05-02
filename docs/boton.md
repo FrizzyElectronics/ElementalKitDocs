@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/boton1.jpg "Modulo de boton básico")
 
-El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propio switch de dos posiciones "on/off" y su correspondiente resistencia pull-up. Cuando el botón es presionado, devuelve LOW y cuando lo sueltas devuelve HIGH. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo de botón es un pequeño switch momentaneo de 12mm. Contiene el propio switch de dos posiciones "on/off" y su correspondiente resistencia pull-up. Cuando el botón es presionado, devuelve LOW y cuando lo sueltas devuelve HIGH. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 

@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/keypad.jpg "Modulo Keypad")
 
-El módulo keypad contiene cuatro interruptores de 12mm conectados a cutro resistencias con diferentes valores para que puedas operar los 4 botones ¡con solo un pin analogico de tu placa! El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo keypad contiene cuatro interruptores de 12mm conectados a cutro resistencias con diferentes valores para que puedas operar los 4 botones ¡con solo un pin analogico de tu placa! El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 
 ## Características

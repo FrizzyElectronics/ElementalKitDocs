@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/linefollower.jpg "Modulo de Siguelíneas")
 
-El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar el nivel de luz ambiente y devolvertelo en funcion de la tensión. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar el nivel de luz ambiente y devolvertelo en funcion de la tensión. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 

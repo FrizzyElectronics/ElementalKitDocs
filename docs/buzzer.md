@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/buzzer.jpg "Modulo de boton básico")
 
-El módulo buzzer consta de un zumbador pasivo con el que puedes reproducir tonos. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo buzzer consta de un zumbador pasivo con el que puedes reproducir tonos. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 

@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/servo1.jpg "Mini Servo de 180 grados")
 
-El módulo de potenciómetro consta de un potenciómetro de 10k conectado directamente al conector JST, es la manera más sencilla de añadir rápidamente un controlador de este tipo a tus proyectos. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El mini-servo ES08MA-II es tu perfecto aliado para tus primeros proyectos. Gracias a sus engranajes de metal, serás capaz de girar grandes cargas sin esfuerzo. Úsalo para hacer un barrido con un sensor o para abrir una puerta en una maqueta. ¡Las posibilidades son infinitas! El conector de salida es un FUT/JR de 2.54mm compatible con los pines de conexión rápida de la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 
@@ -10,6 +10,8 @@ El módulo de potenciómetro consta de un potenciómetro de 10k conectado direct
 * Utiliza la clásica conexión "GND/VCC/SIG"
 * Engranajes internos de metal
 * Torque: 1.8Kg/CM a 6V
+
+### Vista interior
 
 <img src="../images/servo3.jpg" alt="Drawing" style="width: 400px;"/>
 

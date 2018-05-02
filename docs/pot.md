@@ -2,7 +2,7 @@
 
 [![Texto alternativo](images/pot1.jpg "Modulo de potenciómetro basico")](www.frizzy.es/grape)
 
-El módulo de potenciómetro consta de un potenciómetro de 10k conectado directamente al conector JST, es la manera más sencilla de añadir rápidamente un controlador de este tipo a tus proyectos. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo de potenciómetro consta de un potenciómetro de 10k conectado directamente al conector JST, es la manera más sencilla de añadir rápidamente un controlador de este tipo a tus proyectos. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 

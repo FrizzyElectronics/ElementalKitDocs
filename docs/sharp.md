@@ -5,7 +5,7 @@
 
 Los sensores de distancia Sharp son una buena opción para muchos proyectos que necesitan mediciones precisas de distancia. De toda la gama de sensores infrarrojos de distanca que Sharp fabrica, hemos optado por usar el GP2Y0A21YK0F debido a su sencillez de uso y a que posee un rango de medición (10-80cm) aplicable en la mayoria de proyectos de robótica amateur. 
 
-La conexion de este sensor es bastante sencilla, siemplemente tienes que conectar la alimentación y la salida de señal a un pin con conversor analogico-digital de tu microcontrolador favorito. Para facilitar la tarea, hemos añadido un cable compatible con la placa Grape, pero cuidado, ¡Este cable tiene los pines de Vcc y GND invertidos! **¡No emplees este cable para conectar otros módulos Elemental!**
+La conexion de este sensor es bastante sencilla, siemplemente tienes que conectar la alimentación y la salida de señal a un pin con conversor analogico-digital de tu microcontrolador favorito. Para facilitar la tarea, hemos añadido un cable compatible con la placa [Grape](https://www.frizzy.es/grape/), pero cuidado, ¡Este cable tiene los pines de Vcc y GND invertidos! **¡No emplees este cable para conectar otros módulos Elemental!**
 
 
 ## Características

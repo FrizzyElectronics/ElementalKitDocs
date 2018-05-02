@@ -2,7 +2,7 @@
 
 ![Texto alternativo](images/led.jpg "Modulo de boton básico")
 
-El módulo contiene un LED de 10mm muy util para tus primeros proyectos de electrónica o como indicador en tus proyectos más avanzados. Hemos añadido un pequeño transistor para reducir el consumo, de esta manera el LED es alimentado directamente por los 5V de alimentación y no por el pin del microcontrolador como en la mayoría de los montajes que puedes encontrar en Internet. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la Grape.
+El módulo contiene un LED de 10mm muy util para tus primeros proyectos de electrónica o como indicador en tus proyectos más avanzados. Hemos añadido un pequeño transistor para reducir el consumo, de esta manera el LED es alimentado directamente por los 5V de alimentación y no por el pin del microcontrolador como en la mayoría de los montajes que puedes encontrar en Internet. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 
