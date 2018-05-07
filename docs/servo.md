@@ -1,4 +1,4 @@
-#Elemental Kit - Mini-Servo
+#Elemental Kit - Mini servo
 
 ![Texto alternativo](images/servo1.jpg "Mini Servo de 180 grados")
 

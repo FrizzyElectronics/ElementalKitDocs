@@ -1,23 +1,24 @@
-# Elemental Kit - Sensor de distancia infrarrojo
+# Elemental Kit - Grape
 
-[![Texto alternativo](images/sharp.jpg "Sensor de distancia")](www.frizzy.es/grape)
+[![Texto alternativo](images/grape1.jpg "Placa Grape")](www.frizzy.es/grape)
 
-
-Los sensores de distancia Sharp son una buena opción para muchos proyectos que necesitan mediciones precisas de distancia. De toda la gama de sensores infrarrojos de distanca que Sharp fabrica, hemos optado por usar el GP2Y0A21YK0F debido a su sencillez de uso y a que posee un rango de medición (10-80cm) aplicable en la mayoria de proyectos de robótica amateur. 
-
-La conexion de este sensor es bastante sencilla, siemplemente tienes que conectar la alimentación y la salida de señal a un pin con conversor analogico-digital de tu microcontrolador favorito. Para facilitar la tarea, hemos añadido un cable compatible con la placa Grape, pero cuidado, ¡Este cable tiene los pines de Vcc y GND invertidos! **¡No emplees este cable para conectar otros módulos Elemental!**
+La Frizzy Electronics **Grape** es una placa de desarrollo basada en el microcontrolador ATMEGA329P-AU de 8bits de la familia AVR. La placa Grape posee 14 pines digitales configurables como entrada o salida de los cuales 6 pueden ser usados como salidas PWM y 8 entradas analogicas. Como principal caracteristica de la Grape nos encontramos con que posee pines de conexión rapida los cuales ya incorporan alimentación y señal, evitando así el uso de las molestas protoboard. Tienes todo un ecosistema de módulos [Atom](https://frizzy.es/elemental-kit/) que puedes conectar. La placa es totalmente compatible con el Arduino UNO tanto en el uso de shields como en la posicion de los agujeros de montaje.
 
 
 ## Características
 
-* Modelo: GP2Y0A21YK0F
-* Tensión de funcionamiento: 4.5V - 5.5V
-* Consumo: 30mA
-* Rango de medición: 10cm - 80cm
-* Tipo de salida: Analógica
-* Tiempo de respuesta: 38 ± 10 ms
-* Medidas: 29.5×13×13.5 mm
-* Peso: 3.5g
+| Característica |     Valor                |
+| ----- | -----------------              |
+| Microcontrolador   | Atmega328P-AU     |
+| Memoria Flash      | 32KB              |
+| Memoria SRAM       | 1KB               |
+| Digital I/O        | 14                |
+| Entradas Analogicas| 8                 |
+| Salidas PWM        | 6                 |
+| Tensión de alimentacion |7-23 V DC     |
+| Corriente máxima |800 mA (3.3A) 2A (5V)|
+| Conversor USB-UART |     FT231XS       |
+
 
 ##Primeros pasos
 --------
@@ -71,8 +72,10 @@ void loop()
 ##Recursos
 -------
 
--   [Datasheet](http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0a21yk_e.pdf "File: SharpDatasheet")
--   [Librería](https://github.com/qub1750ul/Arduino_SharpIR)
+-   [Datasheet Atmega](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf "File: Datasheet.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Grape.fzpz "File:Grape.fzpz")
+-   [Archivos](https://github.com/FrizzyElectronics/Grape)
+-   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/Grape/master/Hardware/KiCAD/pdf/Grape.pdf "File:Grape.pdf")
 
 ## Licencia
 -------

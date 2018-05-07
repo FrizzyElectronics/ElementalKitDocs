@@ -1,14 +1,15 @@
-# Elemental Kit - Módulo Siguelíneas
+# Elemental Kit - Módulo Infrarrojo
 
 ![Texto alternativo](images/linefollower.jpg "Modulo de Siguelíneas")
 
-El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar el nivel de luz ambiente y devolvertelo en funcion de la tensión. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
+El módulo de infrarrojos consta de un pequeño fotosensor TCRT5000 que incorpora un emisor de infrarrojos y un fototransistor engarcado de captar el haz infrarrojo si rebota en un objeto. Este modulo es realmente útil para proyectos como un robot sigue-lineas o una alarma para la puerta. El conector de salida es el correspondiente JST-PH de 2.0mm compatible con los cables para la [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 
-* Módulo fácil de usar
+* Sensor PCRT5000
 * Utiliza la clásica conexión "GND/VCC/SIG"
-* Incluye el divisor resistivo
+* Salida digital
+* Incluye potenciómetro de ajuste de sensibilidad
 
 ##Primeros pasos
 --------
@@ -16,13 +17,13 @@ El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar
 ###Grape
 
 
-<img src="../images/montaje_ldr.png" alt="Drawing" style="width: 400px;"/>
+<img src="../images/montaje_ir.png" alt="Drawing" style="width: 400px;"/>
 
-| Grape | Elemental - LDR |
+| Grape | Elemental - Infrared|
 | ----- | ----------------- |
 | GND   | Negro             |
 | 5V    | Rojo              |
-| A2    | Amarillo          |
+| D2    | Amarillo          |
 
 
 ```arduino
@@ -30,13 +31,20 @@ El módulo de ldr consta de un pequeño fotorresistor de 10k engarcado de captar
 void setup() {
     //Inicializamos el puerto serie 9600 baudios
     Serial.begin(9600);
+    //Iniciamos el pin del sensor como entrada
+    pinMode(2, INPUT);
 }
 
 void loop(){
-    // Leemos el sensor y lo asignamos a la variable luz
-    luz = analogRead(A2);
-    Serial.print("El nivel de luz es de:");
-    Serial.println(luz);
+    // Leemos el sensor y lo asignamos a la variable sensor
+    sensor = digitalRead(2);
+    Serial.print("El estado del sensor es:");
+    if(sensor == HIGH){
+    	Serial.println("Activado!");
+    }
+    else{
+    	Serial.println("Desactivado...");
+    }
 
 }
 ```
@@ -45,9 +53,10 @@ void loop(){
 ##Recursos
 -------
 
--   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
--   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_LDR.fzpz "File:BasicModule-II.pdf")
+-   [Datasheet fotosensor](https://www.vishay.com/docs/83760/tcrt5000.pdf "File: Datasheet.pdf")
+-   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/Line-follower-sensor)
+-   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/Line-follower-sensor/master/pdf/Modulo_IR.pdf "File:Modulo_IR.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Infrared.fzpz "File:Atom_Infrared.fzpz")
 
 ## Licencia
 -------
