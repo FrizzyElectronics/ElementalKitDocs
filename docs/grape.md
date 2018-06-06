@@ -1,13 +1,17 @@
+
 # Elemental Kit - Grape
 
 [![Texto alternativo](images/grape1.jpg "Placa Grape")](www.frizzy.es/grape)
 
-La Frizzy Electronics **Grape** es una placa de desarrollo basada en el microcontrolador ATMEGA329P-AU de 8bits de la familia AVR. La placa Grape posee 14 pines digitales configurables como entrada o salida de los cuales 6 pueden ser usados como salidas PWM y 8 entradas analogicas. Como principal caracteristica de la Grape nos encontramos con que posee pines de conexión rapida los cuales ya incorporan alimentación y señal, evitando así el uso de las molestas protoboard. Tienes todo un ecosistema de módulos [Atom](https://frizzy.es/elemental-kit/) que puedes conectar. La placa es totalmente compatible con el Arduino UNO tanto en el uso de shields como en la posicion de los agujeros de montaje.
+La Frizzy Electronics **Grape** es una placa de desarrollo basada en el microcontrolador ATMEGA329P-AU de 8bits de la familia AVR. La placa Grape posee 14 pines digitales configurables como entrada o salida de los cuales 6 pueden ser usados como salidas PWM y 8 entradas analogicas. Como principal caracteristica de la Grape nos encontramos con que posee pines de conexión rapida los cuales ya incorporan alimentación y señal, evitando así el uso de las molestas protoboard. Tienes todo un ecosistema de módulos [Atom](https://frizzy.es/elemental-kit/) que puedes conectar. La placa es totalmente compatible con el Arduino UNO tanto en el uso de sus shields como en la posición de los agujeros de montaje.
+
+Incorporta un conector JST de 4 pines para conectar dispositivos I2C del ecosistema Atom como una pantalla Oled o una matriz led. Es capaz de soportar de continuo 2A de corriente por lo que no tendras ningún problema a la hora de hacer robots que usen varios servos, por ejemplo.
+
 
 
 ## Características
 
-| Característica |     Valor                |
+| Característica |     Valor             |
 | ----- | -----------------              |
 | Microcontrolador   | Atmega328P-AU     |
 | Memoria Flash      | 32KB              |
@@ -23,48 +27,40 @@ La Frizzy Electronics **Grape** es una placa de desarrollo basada en el microcon
 ##Primeros pasos
 --------
 
-###Grape
 
-El GP2Y0A21YK0F es un sensor de distancia de tipo infrarrojo. Esta compuesto por un led IR y un dispositivo detector de posición (PSD). El emisor infrarrojo emite un haz de luz pulsante. El haz rebota en el objeto y vuelve para ser captado por el PSD el cual mide la distancia por triangulación.
+Para comenzar a usar nuestra placa Grape, lo primero que necesitaremos será descargar el IDE de Arduino. Para descargarlo, iremos a la web oficial de Arduino [www.arduino.cc](www.arduino.cc) y en la pestaña Software>Dowloads nos descargaremos el IDE para nuestra versión de sistema operativo. El IDE es totalmente gratuito, pero desde aquí hacemos un llamamiendo a las donaciones para contribuir con el proyecto Arduino. Si alguno está interesado en donar al descargarlo, puede hacerlo seleccionando la cantidad a donar. 
 
-<img src="../images/sharp_funcionamiento.png" alt="Drawing" style="width: 600px;"/>
+[![Texto alternativo](images/descargando.gif "Placa Grape")](www.frizzy.es/grape)
 
-El sensor devuelve un valor de tensión no lineal representado por esta gráfica, es por ello que tendremos que interpolar. Hemos optado por el uso de una librería que te facilita la tarea, ya que el uso de un código más complejo excedería la dificultad que buscamos con el Elemental Kit.
+También puedes comprar alguna de sus [placas](https://store.arduino.cc/) para apoyarles.
 
-Si quieres aprender a usar el sensor de esta manera y no quieres usar la librería hay multitud de tutoriales como [este](http://www.naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html) en internet. 
+Una vez instalado en tu ordenador, abriremos la aplicación. Vamos a crear el primer programa conocido como "hola mundo". En el mundo de Arduino esto se conoce como Blynk, ya que la forma que tendrá la placa de decirnos "hola" será haciendo parpadear un led. Podemos escribir nosotros mismos el codigo o podemos abrir un ejemplo ya escrito como te enseñamos a continuación.
 
-La librería que vamos a usar es de [Giuseppe Masino](https://github.com/qub1750ul/Arduino_SharpIR) y la podeis encontrar en el gestor de librerías oficial de Arduino dentro del menú Programa > Incluir Librería > Gestor de librerias bajo el nombre de "SharpIR"
+[![Texto alternativo](images/ejemplo-blynk.gif "Placa Grape")](www.frizzy.es/grape)
 
-###Conexión
+En este código, lo que haremos será hacer parpadear el led conectado al pin 13, por lo que no necesitamos ningún módulo Atom externo ni hardware adicional, viene ya con nuestra placa Grape, por lo que siempre que nuestro pin digital 13 esté en modo HIGH, veremos encendido este led. Este led le podemos encontrar cerca del pin 13 con la serigrafía "D13" y cuando lo encendamos se iluminará de color azul. 
 
-<img src="../images/montaje_sharp.png" alt="Drawing" style="width: 600px;"/>
+Es ahora cuando conectaremos nuestra Grape al ordenador mediante el cable micro-USB. Para subir el programa a la placa, debemos selecionar el modelo Arduino Nano en Herramientas > Placa > Arduino Nano, y el puerto COM en el que se encuentra nuestra placa mediante Herramientas > Puerto. 
 
-| Grape | Elemental - Sensor de distancia |
-| ----- | ----------------- |
-| GND   | Negro             |
-| 5V    | Rojo              |
-| A2    | Amarillo          |
+[![Texto alternativo](images/subiendo.gif "Placa Grape")](www.frizzy.es/grape)
 
+Si quieres copiar el código aquí lo tienes:
 
 ```arduino
 
-#include <SharpIR.h>  //Incluimos la libreria
+const int ledPin =  13;     // Pin del Led
 
-
-//Creamos una nueva instancia y la llamamos sensor
-SharpIR sensor(GP2Y0A21YK0F, A2);   //Introducimos el pin y el modelo del sensor
-
-
-void setup()
-{
-  Serial.begin(9600);  //Iniciamos el puerto serie a 9600 baudios
+void setup() {
+    // Inicializamos el led como salida
+    pinMode(ledPin, OUTPUT);
 }
 
-void loop()
-{
-  int distance = sensor.getDistance(); //Declaramos una variable para almacenar la distancia
-  
-  Serial.println(distance); //Imprimimos la distacia por el puerto serie.
+void loop(){
+
+    digitalWrite(ledPin, HIGH); //Encendemos el led
+    delay(1000); //Esperamos 1 segundo
+    digitalWrite(ledPin, LOW);  //Apagamos el led
+    delay(1000); //Esperamos 1 segundo
 }
 ```
 
@@ -76,6 +72,7 @@ void loop()
 -   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Grape.fzpz "File:Grape.fzpz")
 -   [Archivos](https://github.com/FrizzyElectronics/Grape)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/Grape/master/Hardware/KiCAD/pdf/Grape.pdf "File:Grape.pdf")
+-   [Drivers USB](http://www.ftdichip.com/Drivers/VCP.htm)
 
 ## Licencia
 -------
