@@ -27,7 +27,6 @@ Incorporta un conector JST de 4 pines para conectar dispositivos I2C del ecosist
 ##Primeros pasos
 --------
 
-
 Para comenzar a usar nuestra placa Grape, lo primero que necesitaremos será descargar el IDE de Arduino. Para descargarlo, iremos a la web oficial de Arduino [www.arduino.cc](www.arduino.cc) y en la pestaña Software>Dowloads nos descargaremos el IDE para nuestra versión de sistema operativo. El IDE es totalmente gratuito, pero desde aquí hacemos un llamamiendo a las donaciones para contribuir con el proyecto Arduino. Si alguno está interesado en donar al descargarlo, puede hacerlo seleccionando la cantidad a donar. 
 
 [![Texto alternativo](images/descargando.gif "Placa Grape")](www.frizzy.es/grape)
@@ -63,6 +62,18 @@ void loop(){
     delay(1000); //Esperamos 1 segundo
 }
 ```
+
+Y si todo ha ido bien...¡deberías tener el led parpadeando!
+
+##Drivers
+
+Nuestra placa Grape incorpora el conversor USB-UART [FT231XS](http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf) el cual es reconocido por la mayoría de sistemas operativos de manera nativa, por lo que no deberías tener ningún problema a la hora de que tu placa sea detectada por tu ordenador sin nedesidad de drivers, uses el sistema operativo que uses (Windows, Mac OS X o LinuX)
+
+Si por algún motivo tienes problemas y tu ordenador no detecta tu placa, te enseñamos a instalar los drivers.
+
+Debes descargarte los drivers de la [web del fabricante](http://www.ftdichip.com/Drivers/VCP.htm). Una vez ahí descargate la versión que corresponda para tu sistema operativo e instalalos en tu máquina. 
+
+[![Texto alternativo](images/drivers.gif "Placa Grape")](www.frizzy.es/grape)
 
 
 ##Recursos
