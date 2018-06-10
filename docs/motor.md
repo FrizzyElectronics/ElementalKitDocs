@@ -96,10 +96,9 @@ void loop(){
 }
 ```
 
-
 ##Recursos
 -------
--   [Datasheet](https://raw.githubusercontent.com/FrizzyElectronics/MotorController/master/datasheet/l9110.pdf "File:l9110.pdf")
+-   [Datasheet](https://raw.githubusercontent.com/FrizzyElectronics/MotorController/blob/master/datasheet/l9110.pdf "File:l9110.pdf")
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/MotorController)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/MotorController/master/pdf/MotorController.pdf "File:MotorController.pdf")
 -   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_Motor_Controller.fzpz "File:MotorController.fzpf")
