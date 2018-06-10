@@ -47,7 +47,7 @@ void loop(){
 
 -   [Archivos PCB en KiCAD](https://github.com/FrizzyElectronics/BasicModule-II)
 -   [Esquema en PDF](https://raw.githubusercontent.com/FrizzyElectronics/BasicModule-II/master/pdf/BasicModule-II.pdf "File:BasicModule-II.pdf")
--   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_LDR.fzpz "File:BasicModule-II.pdf")
+-   [Fritzing](https://raw.githubusercontent.com/FrizzyElectronics/AtomModulesFritzingParts/master/FritzingParts/Atom_LDR.fzpz "File:Atom_LDR.fzpz")
 
 ## Licencia
 -------
