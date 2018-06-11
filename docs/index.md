@@ -15,11 +15,11 @@
 
 | **Sensores**  |    **Actuadores**  |    **Displays**   | 
 |:---:|:---:|:---:|
-|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/sensor.png)](/Sensor) | [![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Grove_Actuator.jpg)](/Actuator) |[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Grove_Display.jpg)](/Display)    |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/sensor.png)](/Sensor) | [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/actuador.png)](/Actuator) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/display.png)](/Display)    |
 
 | **Comunicacion**  |   **Otros**    |       |  
 |:---:|:---:|:---:|
-|[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Grove_Communication.jpg)](/Communication)    |[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Grove_Others.JPG)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/comunicaciones.png)](/Communication)    |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/otros.png)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
 
 ## Licencia
 -------
