@@ -3,7 +3,7 @@
 ## Frizzy Elemental Kit
 
 
-[![Texto alternativo](images/kit1.JPG "descripcion")](www.frizzy.es/kit)
+[![Texto alternativo](images/kit2.jpg "descripcion")](www.frizzy.es/kit)
 ## Plataformas
 
 | **Arduino**  |    **Raspberry**  |    **Beaglebone**   | 

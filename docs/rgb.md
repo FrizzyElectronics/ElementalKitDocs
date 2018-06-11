@@ -28,9 +28,12 @@ El módulo de RGB cuenta con un led 5050 RGB con el que podrás generar hasta 16
 
 ```arduino
 
+const int RED = 9;
+const int GREEN = 10;
+const int BLUE = 11;
+
 void setup() {
-    //Inicializamos el puerto serie 9600 baudios
-    Serial.begin(9600);
+    pinMode(RED, OUTPUT);
 }
 
 void loop(){
