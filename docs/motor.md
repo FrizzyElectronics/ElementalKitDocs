@@ -4,7 +4,7 @@
 
 El módulo Motor Controller es una pequeña placa capaz de controlar 2 motores de corriente continua o un motor paso a paso gracias a sus dos drivers integrados L9110. Puedes controlar motores de corriente continua con un consumo continuado de 800mA con total tranquilidad y puede soportar picos de entre 1.5A y 2A aunque no recomendamos nunca llegar a esas cifras. Así mismo, el driver también incluye diodos de protección. 
 
-El módulo conta de cdos conectores para sus dos respectivos motores, dos pines de alimentación con los que puedes alimentar el modulo de manera independiente para no dañar tu arduino y 4 conectadores de señal para manejar los motores con tu [Grape](https://www.frizzy.es/grape/).
+El módulo cuenta con dos conectores para sus dos respectivos motores, dos pines de alimentación con los que puedes alimentar el modulo de manera independiente para no dañar tu arduino y 4 conectores de señal para manejar los motores con tu [Grape](https://www.frizzy.es/grape/).
 
 ## Características
 

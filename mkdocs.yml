@@ -16,14 +16,14 @@ pages:
       - Sensor siguelineas: linefollower.md
       - Keypad: keypad.md
     - Actuadores:
-      - Controlador de motores: motor.md
+      - Motor Controller: motor.md
       - Led RGB: rgb.md
       - Buzzer: buzzer.md
       - Led: led.md
       - Servo: servo.md
     - Display:
       - Pantalla Oled: oled.md
-    - Communicacion:
+    - Comunicación:
       - Módulo bluetooth: bluetooth.md
     - Otros: otros.md 
 theme:
