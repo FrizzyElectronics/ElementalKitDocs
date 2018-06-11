@@ -15,11 +15,11 @@
 
 | **Sensores**  |    **Actuadores**  |    **Displays**   | 
 |:---:|:---:|:---:|
-|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/sensor_s.png)](/Sensor) | [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/actuador_s.png)](/actuator) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/display_s.png)](/Display)    |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Sensor-01.png)](/Sensor) | [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Actuador-01.png)](/actuator) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Display-01.png)](/Display)    |
 
 | **Comunicacion**  |   **Otros**    |       |  
 |:---:|:---:|:---:|
-|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/comunicaciones_s.png)](/Communication)    |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/otros_s.png)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Antena-01.png)](/Communication)    |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Otros-01.png)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
 
 ## Licencia
 -------
