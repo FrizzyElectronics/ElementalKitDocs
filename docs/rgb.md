@@ -33,14 +33,23 @@ const int GREEN = 10;
 const int BLUE = 11;
 
 void setup() {
+	
     pinMode(RED, OUTPUT);
+    pinMode(GREEN, OUTPUT);
+    pinMode(BLUE, OUTPUT);
 }
 
 void loop(){
-    // Leemos el sensor y lo asignamos a la variable luz
-    luz = analogRead(A2);
-    Serial.print("El nivel de luz es de:");
-    Serial.println(luz);
+    
+    digitalWrite(BLUE, LOW);
+    digitalWrite(RED, HIGH);
+    delay(1000);
+    digitalWrite(RED, LOW);
+    digitalWrite(GREEN, HIGH);
+    delay(1000);
+    digitalWrite(GREEN, LOW);
+    digitalWrite(BLUE, HIGH);
+    delay(1000);
 
 }
 ```
