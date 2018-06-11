@@ -8,18 +8,18 @@
 
 | **Arduino**  |    **Raspberry**  |    **Beaglebone**   | 
 |:---:|:---:|:---:|
-|[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/arduino.png)](/Arduino)   |  [![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Respberry%20Pi.png)](/Raspberry_Pi) |[![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/Beaglebone.png)](/BeagleBone)  |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/arduino.png)](/Arduino)   |  [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/RaspberryPi.png)](/Raspberry_Pi) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/Beaglebone.png)](/BeagleBone)  |
 
 
 ## Grape
 
 | **Sensores**  |    **Actuadores**  |    **Displays**   | 
 |:---:|:---:|:---:|
-|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/sensor.png)](/Sensor) | [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/actuador.png)](/Actuator) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/display.png)](/Display)    |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/sensor_s.png)](/Sensor) | [![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/actuador_s.png)](/actuator) |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/display_s.png)](/Display)    |
 
 | **Comunicacion**  |   **Otros**    |       |  
 |:---:|:---:|:---:|
-|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/comunicaciones.png)](/Communication)    |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/otros.png)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
+|[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/comunicaciones_s.png)](/Communication)    |[![](https://github.com/FrizzyElectronics/ElementalKitDocs/raw/master/docs/images/otros_s.png)](/Others)    |![](https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/empty.png)   |
 
 ## Licencia
 -------
